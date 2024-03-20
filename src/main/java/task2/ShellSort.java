@@ -4,7 +4,6 @@ public class ShellSort {
     public static int[] sort(int[] arr) {
         int n = arr.length;
 
-        // Начинаем с большого интервала, затем уменьшаем его
         for (int gap = n / 2; gap > 0; gap /= 2) {
             // Применяем сортировку вставками с текущим интервалом
             for (int i = gap; i < n; i++) {
